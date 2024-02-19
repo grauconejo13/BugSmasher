@@ -1,0 +1,80 @@
+html,
+body {
+    font-family: arial, roboto;
+    color: #000000;
+    background-image: linear-gradient(to right, saddlebrown 0%, darkgoldenrod 100%);
+}
+
+//the black frame around the canvas
+.container{
+    /*width: 50%;  */
+}
+
+#page {
+    width:60%;
+    padding: 2px;
+    background: gray;
+    border: solid black 2px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+   
+//where the bugs in the image
+//issue will adjust size to browser when minimize - need fixing
+//need to center (-__-)\ aigoooo
+canvas {
+    margin: 0 auto;    
+    border: solid black 10px;
+}
+
+/* #canvas {
+    max-width: 100%;
+    max-height: 80vh; /* Adjust based on the viewport height */
+    //margin: 0 auto; /* Center the canvas */}
+
+h1 {
+    text-align: center;
+    color: darkgoldenrod;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+
+#resetSpeed {
+    margin-bottom: 3px;
+}
+
+p {
+    padding-left: 5px;
+}
+
+button{
+    width: 10%;
+    color: black;
+    font-weight: bold;
+    background-color: darkgoldenrod;
+    font: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+button:hover {
+    color: darkgoldenrod;
+    background-color: black;
+}
+
+/* When the viewport width is 600 pixels or less */
+@media (max-width: 600px) {
+    body {
+        background-color: violet;
+    }
+    canvas{width:100%;}
+}
+
+/* When the viewport width is greater than 600 pixels */
+@media (min-width: 601px) {
+    body {
+        background-color: lightgreen;
+    }
+}
