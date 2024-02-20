@@ -1,5 +1,7 @@
-"use strict";
+//Vanessa Victorino - 301201653
+//Circa JAN2022
 
+"use strict";
 
 // Create the canvas
 var canvas = document.getElementById("canvas");
@@ -35,7 +37,7 @@ var speed = 2000;
 var newSpeed = speed;
 var speedFactor = 1.2;
 
-// Reset the game when the user clicks on the bug
+// Changes in the game when the user clicks on the bug
 var reset = function() {
     // Places the bug randomly on the canvas
     bug.x = 60 + (Math.random() * (canvas.width - 120));
@@ -79,7 +81,7 @@ var render = function() {
         catx2d.drawImage(bugImage, bug.x, bug.y);
     }
 
-    // Score
+    // Score indicator in the canvas
     catx2d.fillStyle = "rgb(232, 100, 12)";
     catx2d.font = "28px arial";
     catx2d.textAlign = "left";
@@ -120,6 +122,7 @@ var then = Date.now();
 reset();
 main();
 
+//19FEB2024_issue - bug multiplying ~ need to be fix.
 /*function resizeCanvas() {
     const canvas = document.getElementById('canvas');
     const container = canvas.parentElement; // Assuming the canvas is directly inside the container div
